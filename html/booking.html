@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip | ExploreEra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">Explore<span>Era</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="transport.html">Transport</a>  <!-- Add this line -->
+            <a href="booking.html">Book Now</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <div class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+    <!-- Booking Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Book Your Dream Vacation</h1>
+            <p>Fill out the form below and our travel expert will contact you shortly</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-form-container">
+                <div class="form-header">
+                    <h2>Travel Information</h2>
+                    <p>Please provide your details and travel preferences</p>
+                </div>
+                
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name*</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destination*</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="tokyo">Tokyo, Japan</option>
+                                <option value="newyork">New York, USA</option>
+                                <option value="capetown">Cape Town, South Africa</option>
+                                <option value="rome">Rome, Italy</option>
+                                <option value="sydney">Sydney, Australia</option>
+                                <option value="dubai">Dubai, UAE</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travelDate">Travel Date*</label>
+                            <input type="date" id="travelDate" name="travelDate" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers*</label>
+                            <select id="travelers" name="travelers" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Traveler</option>
+                                <option value="2">2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5+">5+ Travelers</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration">Trip Duration*</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">Select Duration</option>
+                                <option value="3-5">3-5 Days</option>
+                                <option value="6-8">6-8 Days</option>
+                                <option value="9-12">9-12 Days</option>
+                                <option value="13+">13+ Days</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requirements or preferences..."></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn">Submit Booking Request</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="booking-sidebar">
+                <div class="sidebar-card">
+                    <h3>Why Book With Us?</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Best Price Guarantee</li>
+                        <li><i class="fas fa-check-circle"></i> No Booking Fees</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible Cancellation</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Need Help?</h3>
+                    <p>Our travel experts are here to assist you with your booking and any questions you may have.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> bookings@exploreera.com</p>
+                    </div>
+                    <a href="contact.html" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Booking Confirmation</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Thank You for Your Booking Request!</h4>
+                <p>We have received your travel inquiry and one of our travel experts will contact you within 24 hours to confirm your booking details.</p>
+                <p>Your booking reference number is: <strong>EXPL2023-<span id="referenceNumber"></span></strong></p>
+                <div class="modal-actions">
+                    <button class="btn close-confirmation">Done</button>
+                    <a href="index.html" class="btn-outline">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

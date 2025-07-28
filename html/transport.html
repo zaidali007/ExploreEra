@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Cost Comparison | ExploreEra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tstyle.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation (same as above) -->
+    
+    <!-- Transport Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Transportation Cost Calculator</h1>
+            <p>Compare prices for bus, train and flight options</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="transport-section">
+        <div class="container">
+            <div class="calculator-card">
+                <h2>Calculate Your Travel Costs</h2>
+                
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="from-city">From City</label>
+                        <input type="text" id="from-city" placeholder="Delhi">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="to-city">To City</label>
+                        <input type="text" id="to-city" placeholder="Mumbai">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="travel-date">Travel Date</label>
+                        <input type="date" id="travel-date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <select id="passengers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    
+                    <button id="calculate-btn" class="btn">Calculate Now</button>
+                </div>
+                
+                <div class="results">
+                    <div class="transport-option">
+                        <div class="icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3>By Bus</h3>
+                        <div class="price">₹<span id="bus-price">-</span></div>
+                        <div class="details">
+                            <span><i class="fas fa-clock"></i> <span id="bus-time">-</span></span>
+                            <span><i class="fas fa-smile"></i> <span id="bus-comfort">-</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="transport-option">
+                        <div class="icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h3>By Train</h3>
+                        <div class="price">₹<span id="train-price">-</span></div>
+                        <div class="details">
+                            <span><i class="fas fa-clock"></i> <span id="train-time">-</span></span>
+                            <span><i class="fas fa-smile"></i> <span id="train-comfort">-</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="transport-option">
+                        <div class="icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>By Flight</h3>
+                        <div class="price">₹<span id="flight-price">-</span></div>
+                        <div class="details">
+                            <span><i class="fas fa-clock"></i> <span id="flight-time">-</span></span>
+                            <span><i class="fas fa-smile"></i> <span id="flight-comfort">-</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="popular-routes">
+                <h2>Popular Routes</h2>
+                <div class="routes-grid">
+                    <div class="route">
+                        <h3>Delhi to Jaipur</h3>
+                        <div class="options">
+                            <div class="option">
+                                <i class="fas fa-bus"></i>
+                                <span>₹800-1200</span>
+                                <small>6-8 hours</small>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-train"></i>
+                                <span>₹500-900</span>
+                                <small>4-6 hours</small>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-plane"></i>
+                                <span>₹2500-4000</span>
+                                <small>1 hour</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route">
+                        <h3>Mumbai to Goa</h3>
+                        <div class="options">
+                            <div class="option">
+                                <i class="fas fa-bus"></i>
+                                <span>₹1500-2000</span>
+                                <small>12-14 hours</small>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-train"></i>
+                                <span>₹800-1500</span>
+                                <small>8-10 hours</small>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-plane"></i>
+                                <span>₹3000-5000</span>
+                                <small>1 hour</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+
+    <script src="js/transport.js"></script>
+</body>
+</html>
